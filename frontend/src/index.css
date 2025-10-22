@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  
+  .backdrop-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+/* Custom animations for hero section */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes textSlide {
+  0%, 16.667%, 100% {
+    transform: translateY(0%);
+  }
+  25%, 33.333% {
+    transform: translateY(-25%);
+  }
+  41.667%, 50% {
+    transform: translateY(-50%);
+  }
+  58.333%, 66.667% {
+    transform: translateY(-75%);
+  }
+  75%, 83.333% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-text-slide {
+  animation: textSlide 12s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@layer base {
+  .font-[Times_New_Roman] {
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
