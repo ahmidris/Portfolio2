@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://portfolio2-backend-2wpj.onrender.com';
 
 export const sendContactMessage = async (data) => {
   // Client-side validation
