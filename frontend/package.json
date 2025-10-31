@@ -1,5 +1,6 @@
 {
   "name": "portfolio-frontend",
+  "homepage": "https://ahmidris.github.io/Portfolio2",
   "version": "1.0.0",
   "description": "Modern portfolio website frontend",
   "main": "index.js",
@@ -7,7 +8,9 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",

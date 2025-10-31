@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "npm --prefix frontend run start",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend install --include=dev && npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "deploy": "npm --prefix frontend run deploy"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
